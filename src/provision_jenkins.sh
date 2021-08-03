@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # This provisioning file sets up a Jenkins instance
 # Updating the built in repos
 sudo apt-get update -y
