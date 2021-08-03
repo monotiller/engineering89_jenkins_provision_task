@@ -14,3 +14,15 @@ If you need the admin password to complete setup, simply run this command:
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 In your vagrant ssh terminal to get the password
+
+
+## AWS
+If you wish to get automatic setup in AWS, the process is quite simple.
+
+1. Set up your AWS instance as you normally would until you get to step 3
+2. When you reach step 3 you will need to locate the "User data" field
+3. Select "use file" and upload the `provision_jenkins.sh` file
+4. Continue setup as usual
+5. Wait. It may take a while to install
+6. Navigate to your AWS instance and append `:8080` to the IP address
+7. Complete the [setup process](https://www.jenkins.io/doc/book/installing/linux/#setup-wizard)
